@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="myscripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar">
+        <a class="navbar-brand" style="color:#26ae60 ;">
+            <img src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                width="30" height="30" class="d-inline-block align-top" alt="BMI Calculator" title="BMI Calculator">
+            BMI Calculator
+        </a>
+        <ul class="navbar-nav form-inline my-2 my-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" id="n" href="https://www.instagram.com/kanishkar_bubeshkumar_07/">Created By
+                    Kanishkar</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" style="background-color:#26ae60; color: #333945; font-family: sans-serif;">
+        <div class="container">
+            <h1 class="display-4">Calculate your BMI</h1>
+            <p class="lead">BMI is a measurement of a person's leanness or corpulence based on their height and weight,
+                and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person
+                has a healthy body weight for their height.</p>
+            <div class="alert alert-dark " role="alert">
+                BMI is not used for muscle builders, long distance athletes, pregnant women, the elderly or young
+                children. This is because BMI does not take into account whether the weight is carried as muscle or fat,
+                just the number. Those with a higher muscle mass, such as athletes, may have a high BMI but not be at
+                greater health risk. Those with a lower muscle mass, such as children who have not completed their
+                growth or the elderly who may be losing some muscle mass may have a lower BMI. During pregnancy and
+                lactation, a woman's body composition changes, so using BMI is not appropriate.
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="test" style="color: white;"></h1>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-row" style="color:#26ae60; font-family: sans-serif;">
+                <div class=" form-group col-md-6">
+                    <label>Height (Centimeters)</label>
+                    <input type="number" min="0" id="height" class="form-control" placeholder="Height in Centimeters"
+                        required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Weight (Kg)</label>
+                    <input type="number" min="0" id="weight" class="form-control" placeholder="Weight in kg" required>
+                </div>
+            </div>
+            <button type="button" class="btn btn-block" style="background-color:#26ae60; color: white;"
+                onclick="calculate()">Calculate</button>
+        </form>
+    </div>
+    <br><br><br><br>
+
+    <div class="container d-flex justify-content-center">
+        <div style="color: white;">
+            <h5>Thank you for using our application</h5>
+            <h5 style="text-align: center;">Stay Fit Stay Healthy</h5>
+            <a href="https://www.instagram.com/kanishkar_bubeshkumar_07/" class="btn d-flex justify-content-center"
+                style="background-color:#26ae60; color: white;">Follow me on instagram</a>
+        </div>
+    </div>
+    <br><br>
+
+</body>
+
+</html>
